@@ -1,7 +1,7 @@
 import java.io.*;
 import java.util.*;
 
-//HEAVILY INSPIRED BY SOMEONE ELSE'S SOLUTION I FOUND ON SUBREDDIT
+//HEAVILY INSPIRED BY SOMEONE ELSE'S SOLUTION I FOUND ON THE SUBREDDIT
 
 public class Day2Part2 {
     public static void main(String[] args) {
