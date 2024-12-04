@@ -65,9 +65,11 @@ public class Day3Part2ChatGPT {
             // No "don't()" means process the whole line
             total += checkMult(line);
         } else {
-            // If "do()" comes after "don't()", process up to "don't()", then after "do()"
+            // If "do()" comes after "don't()" or doesn't exist, process up to "don't()"
             if (lowerBound > upperBound || lowerBound == -1) {
                 total += checkMult(line.substring(0, upperBound));
+                
+                // If "do()" does exist, process the substring from "do()" onwards
                 if (lowerBound != -1) {
                     total += checkMult2(line.substring(lowerBound + startStr.length()));
                 }
